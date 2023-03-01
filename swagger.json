@@ -1,0 +1,140 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "API de ejemplo",
+    "description": "API de ejemplo con Swagger"
+  },
+  "host": "localhost:3000",
+  "basePath": "/api",
+  "tags": [
+    {
+      "name": "users",
+      "description": "Operaciones de usuarios"
+    },
+    {
+      "name": "products",
+      "description": "Operaciones de productos"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/users": {
+      "get": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Obtener todos los usuarios",
+        "description": "Devuelve una lista con todos los usuarios registrados",
+        "responses": {
+          "200": {
+            "description": "Operación exitosa",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/User"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Crear un nuevo usuario",
+        "description": "Crea un nuevo usuario en el sistema",
+        "parameters": [
+          {
+            "name": "user",
+            "in": "body",
+            "description": "Información del usuario",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/UserInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación exitosa",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        }
+      }
+    },
+    "/products": {
+      "get": {
+        "tags": [
+          "products"
+        ],
+        "summary": "Obtener todos los productos",
+        "description": "Devuelve una lista con todos los productos registrados",
+        "responses": {
+          "200": {
+            "description": "Operación exitosa",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Product"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "products"
+        ],
+        "summary": "Crear un nuevo producto",
+        "description": "Crea un nuevo producto en el sistema",
+        "parameters": [
+          {
+            "name": "product",
+            "in": "body",
+            "description": "Información del producto",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductInput"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operación exitosa",
+            "schema": {
+              "$ref": "#/definitions/Product"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "User": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "age": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "name",
+        "email"
+      ]
+    }
+  }
+}
