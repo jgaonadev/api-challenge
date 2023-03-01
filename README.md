@@ -1,19 +1,58 @@
+
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://standardjs.com/)
 
-API de mi proyecto
-Esta es una API de Express para mi proyecto. La API permite realizar ciertas operaciones que se describen en la documentación.
 
-Instalación
-Clona este repositorio en tu máquina local.
-Ejecuta el comando npm install para instalar las dependencias necesarias.
-Crea un archivo .env y configura las variables de entorno necesarias (ver archivo .env.example para obtener una plantilla).
-Ejecuta el comando npm start para iniciar el servidor.
-Uso
-Una vez que hayas iniciado el servidor, puedes acceder a la API en http://localhost:3000. La API acepta solicitudes HTTP en función de los endpoints definidos en la documentación.
 
-Para usar la API, asegúrate de enviar solicitudes HTTP con los parámetros necesarios. Los endpoints requeridos están descritos en la documentación.
 
-Documentación
-Puedes encontrar la documentación de la API en http://localhost:3000/api-docs. La documentación se genera automáticamente utilizando Swagger.
+# API Challenge
+
+Esta es una API de Express. La API permite realizar ciertas operaciones que se describen en la documentación.
+
+
+## Documentation
+
+[Documentation](http://localhost:3050/api-docs/)
+
+
+## Authors
+
+- [Jaime Gaona](https://github.com/jgaonadev) - Software Developer
+
+
+## 🚀 About Me
+I'm a full stack developer...
+
+
+## 🛠 Skills
+Javascript, HTML, CSS...
+
+
+## Diagrama de Secuencia
+
+![App Screenshot](https://cs1.ssltrust.me/index.php/apps/files_sharing/ajax/publicpreview.php?x=1847&y=602&a=true&file=fullstackflowdiagram.png&t=6u9aC5hCTEhTpT1&scalingup=0)
+
+
+## Installation
+
+Install my-project with npm
+
+```bash
+  npm install my-project
+  cd my-project
+```
+    
+## Running Tests
+
+Para ejecutar pruebas, ejecute el siguiente comando
+
+```bash
+  npm test
+```
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
