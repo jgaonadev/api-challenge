@@ -99,7 +99,7 @@ Para ejecutar pruebas, ejecute el siguiente comando
 
 Actualmente tendra a su disposicion una instancia en aws ejecutando la api en un entorno productivo
 
-[Documentation](http://3.216.125.244/api-docs)
+[Documentation](http://3.216.125.244:3000/api-docs/)
 
 Ultima Actualizacion: 01/03/2023
 
