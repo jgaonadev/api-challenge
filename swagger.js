@@ -33,10 +33,6 @@ const options = {
       {
         name: 'Files',
         description: 'Informacion de Archivos'
-      },
-      {
-        name: 'FilesList',
-        description: 'Lista de Archivos'
       }
     ],
     paths: {

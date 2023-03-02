@@ -3,9 +3,9 @@ const axios = require('axios')
 
 const configAxios = {
   method: 'get',
-  url: config.API_URL_BASE,
+  url: config.apps[0].env.API_URL_BASE,
   headers: {
-    authorization: 'Bearer ' + config.API_KEY
+    authorization: 'Bearer ' + config.apps[0].env.API_KEY
   }
 }
 
