@@ -7,7 +7,7 @@ function readCsvFile (filePath) {
 }
 
 function isValidRow ([_, text, number, hex]) {
-  return text && number && hex && /^[0-9a-fA-F]{32}$/.test(hex)
+  return text && typeof number === 'number' && !isNaN(number) && hex && /^[0-9a-fA-F]{32}$/.test(hex)
 }
 
 function parseCsvFile (file) {
